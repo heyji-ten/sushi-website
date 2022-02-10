@@ -52,6 +52,14 @@ p {
     width: 33.333%;
 }
 
+.hover {
+    transition: all 0.5s;
+}
+
+.hover:hover {
+    transform: translateY(-15px);
+}
+
 /*header*/
 
 #navbar {
@@ -81,6 +89,10 @@ p {
 
 .menubar a {
     color: #fff;
+}
+
+.search {
+    font-size: 20px;
 }
 
 /*popular menu*/
@@ -145,6 +157,12 @@ p {
     border-radius: 50px;
     display: block;
     text-align: center;
+    transition: all 0.5s;
+}
+
+.orderBtn:hover {
+    color:#21243d;
+    background-color: #fff;
 }
 
 /*statistics*/
@@ -285,6 +303,13 @@ p {
     position: absolute;
     right: 0;
     top: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#form .form_email input[type=submit]:hover {
+    background-color: #21243d;
+    color: #ffd17f;
 }
 
 /*footer*/
@@ -298,7 +323,7 @@ p {
 }
 
 #footer .sec {
-    padding: 150px 0;
+    padding: 100px 0;
 }
 
 #footer .f_title {
@@ -311,4 +336,29 @@ p {
     font-size: 23px;
     line-height: 30px;
     margin-bottom: 30px;
+}
+
+#footer .sns_icon {
+    display: flex;
+}
+
+#footer .sns {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    margin-right: 15px;
+}
+
+#footer .copy {
+    margin-top: 20px;
+}
+#footer .copy a {
+    color: #666;
 }
