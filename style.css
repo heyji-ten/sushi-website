@@ -65,6 +65,9 @@ p {
 #navbar {
     background: #21243d;
     color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .nav_sec {
@@ -94,6 +97,110 @@ p {
 .search {
     font-size: 20px;
 }
+
+/* slide */
+#slider {
+    position: relative;
+    overflow-X: hidden;
+    width: 100%;
+    margin: auto;
+  }
+  
+  #slider ul.slider-list {
+    position: absolute;
+    width: 100%;
+  }
+  
+  #slider ul.slider-list.animated {
+    -webkit-animation: left .3s ease-in;
+    transition: left .3s ease-in;
+  }
+  
+  #slider li.slider-content {
+    position: absolute;
+    float: left;
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    height: 713px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #slider .pager {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align: center;
+  }
+  
+  #slider .pager span {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border:2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-indent: -9999em;
+    margin: 0 5px;
+  }
+  
+  #slider .pager span.active {
+    background-color: #333;
+    border:2px solid #fff;
+  }
+  
+  #slider button {
+    position: absolute;
+    top: 50%;
+    background: none;
+    border: none;
+    font-size: 50px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ddd;
+    transition: all .3s;
+  }
+  
+  #slider button:hover {
+    color: #333;
+  }
+  
+  #slider button.prevBtn {
+    left:30px;
+  }
+  
+  #slider button.nextBtn {
+    right:30px;
+  }
+
+  #slider .slide_title {
+      color:#fff;
+      font-size: 125px;
+      margin: 0 0 50px 0;
+  }
+
+  #slider .slide_content {
+      color: #fff;
+      font-size: 30px;
+      margin-bottom: 30px;
+  }
+
+  #slider a.orderBtn {
+      background-color: #21243d;
+      color: #fff;
+      font-size: 25px;
+      line-height: 65px;
+      font-weight: 600;
+      width: 322px;
+      height: 65px;
+      text-align: center;
+      border-radius: 50px;
+  }
 
 /*popular menu*/
 
@@ -333,7 +440,7 @@ p {
 }
 
 #footer .f_cont {
-    font-size: 23px;
+    font-size: 20px;
     line-height: 30px;
     margin-bottom: 30px;
 }

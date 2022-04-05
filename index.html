@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sushi</title>
     <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
 
     <script src="https://kit.fontawesome.com/925a1daff6.js" crossorigin="anonymous"></script>
 </head>
@@ -33,7 +34,40 @@
     </nav>
 
     <!-- slider -->
-    <section id="slider"></section>
+    <section id="slider">
+        <ul class="slider-list">
+            <li class="slider-content" style="background: url('images/background_02.jpg'); background-size: cover;">
+                <div class="slider-cont">
+                    <h1 class="slide_title">Title Here</h1>
+                    <p class="slide_content">Lorem ipsum dolor sit amet, consectetur <br>
+                        adipiscing elit. Vivamus lacinia odio vitae vestibulum <br>
+                        vestibulum. 
+                    </p>
+                    <a href="#" class="orderBtn">
+                        ORDER NOW
+                    </a>
+                </div>
+            </li>
+            <li class="slider-content" style="background: url('images/background_02.jpg'); background-size: cover;">
+                <div class="slider-cont">
+                    <h1 class="slide_title">Title Here2</h1>
+                    <p class="slide_content">Lorem ipsum dolor sit amet, consectetur <br>
+                        adipiscing elit. Vivamus lacinia odio vitae vestibulum <br>
+                        vestibulum. 
+                    </p>
+                    <a href="#" class="orderBtn">
+                        ORDER NOW
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+        <p class="pager">
+        </p>
+
+        <button class="prevBtn"><i class="fa-solid fa-angle-left"></i></button>
+        <button class="nextBtn"><i class="fa-solid fa-angle-right"></i></button>
+    </section>
     
     <!-- popular menu -->
     <section id="popular_menu">
