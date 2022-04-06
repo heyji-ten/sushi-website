@@ -70,6 +70,10 @@ p {
     z-index: 999;
 }
 
+.m_nav_sec {
+    display: none;
+}
+
 .nav_sec {
     display: flex;
     align-items: center;
@@ -322,6 +326,10 @@ p {
     background-size: cover;
 }
 
+#order2 .m_block {
+    display: none;
+}
+
 #order2 .title, #order2 .sub_title {
     color: #21243d;
 }
@@ -468,4 +476,187 @@ p {
 }
 #footer .copy a {
     color: #666;
+}
+
+@media(max-width:980px) {
+
+    img {
+        max-width: -webkit-fill-available;
+    }
+
+    /* navbar */
+
+    .m_menu {
+        font-size: 25px;
+    }
+
+    .m_nav_sec {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 0 15px;
+    }
+
+    .m_menuBtn {
+        cursor: pointer;
+    }
+
+    .m_menubar {
+        background-color: rgba(0,0,0,0.7);
+        width: 200px;
+        height: 999px;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        display: none;
+    }
+
+    .m_menu .m_menubar.active {
+        display: block;
+    }
+
+    .m_menubar .menubar {
+        display: block;
+    }
+
+
+    .m_menubar .menubar li {
+        font-size: 20px;
+        padding: 5px 30px;
+    }
+
+    .search {
+        padding: 10px 30px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .nav_sec {
+        display: none;
+    }
+
+    /* slide */
+    #slider .slide_title {
+        font-size: 50px;
+    }
+    #slider .slide_content {
+        font-size: 20px;
+    }
+
+    #slider li.slider-content {
+        height: 520px;
+    }
+
+    #slider a.orderBtn {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+        margin: 0;
+    }
+
+    /* papular menu */
+
+    #popular_menu .sec {
+        padding: 50px 15px;
+    }
+
+    .title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .sub_title {
+        font-size: 20px;
+    }
+
+    .col {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    .col3, .col2 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #form .form_email input[type=email] {
+        padding: 0;
+        height: 50px;
+        font-size: 16px;
+        line-height: 30px;
+        text-indent: 1.5em;
+    }
+
+    #form .form_email input[type=submit] {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 30px;
+        height: 50px;
+    }
+
+    #order .sec,
+    #order2 .sec,
+    #about .sec {
+        padding: 70px 15px 50px 15px;
+    }
+
+    #statistics .sec,
+    #form .sec,
+    #footer .sec {
+        padding: 50px 15px;
+    }
+
+    .orderBtn {
+        font-size: 20px;
+        line-height: 50px;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    #statistics .num {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    #statistics .name {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #statistics .cir {
+        width: 200px;
+        height: 200px;
+    }
+
+    #order2 .m_block {
+        display: block;
+    }
+
+    #order2 .h_block {
+        display: none;
+    }
+
+    #about .cont_txt {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    #about .name {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    #footer .sns_icon {
+        justify-content: center;
+    }
+
+    #footer .sns_icon .sns:last-child {
+        margin-right: 0;
+    }
 }
